@@ -1,0 +1,161 @@
+:root{
+    --lb: hsl(234, 74%, 64%);
+    --db: hsl(234, 74%, 44%);
+    --dr: hsl(0, 75%, 34%);
+    --lr: hsl(0, 75%, 45%);
+    --dg: hsl(135, 75%, 34%);
+    --lg: hsl(135, 75%, 55%);
+    --w: hsl(0, 100%, 100%);
+    --card-col: hsl(0, 60%, 25%);
+    --card-hl: hsla(0, 0%, 0%, 0.35);
+
+    --scrollbg: hsl(0, 65%, 24%);
+    --scrollth: hsl(0, 54%, 51%);
+    --scrollhov: hsl(0, 54%, 61%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+#movies{
+    background: url(../images/bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#cont{
+    text-align: center;
+    
+}
+
+#cont h1{
+    font-size: 5em;
+    width:50vw;
+    margin:auto;
+    background: var(--dr);
+    border-radius:50px;
+}
+
+button{
+    border:none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    height:40px;
+    padding:5px;
+}
+
+#cont>hr{
+    border:none;
+    height:15px;
+    background: var(--card-hl);
+}
+
+.info{
+    font-size: 1.25em;
+    position: relative;
+    bottom:-10px;
+    left:40px;
+    border:2px solid white;
+    border-radius: 10px;
+    background: var(--w);
+    color: var(--dg);
+    width:75%;
+}
+
+.cur-page{
+    font-size: 1.5em;
+}
+
+button:hover{
+    border-radius: 15px;
+    cursor:pointer;
+    font-size: calc(100% + 15px);
+    height:calc(100% + 20px);
+    transition: 500ms;
+}
+
+nav{
+    width:50%;
+    margin:auto;
+    text-align: center;
+    color: var(--w);
+}
+.holder{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29%, 1fr));
+    grid-gap: 0.65em;
+}
+
+.np{
+    background: var(--dg);
+}
+
+.pp{
+    background: var(--dr);
+    color: var(--w);
+}
+
+.card img{
+    padding: 10% 0;
+    width:100%;
+}
+
+.card{
+    width:20vw;
+    background: var(--card-col);
+    height: 55vh;
+    overflow-y: scroll;
+    border: none;
+    color: var(--w)
+}
+
+.card hr{
+    border:none;
+    height:5px;
+    background: var(--card-hl);
+}
+
+
+.card:hover{
+
+    width:25vw;
+    height: 60vh;
+    font-size: calc(1rem + 15%);
+    transition: 250ms;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(hsl(0, 60%, 35%), hsl(0, 50%, 35%));
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollth);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollhov);
+    cursor:pointer;
+  }
+
+  .center{
+    margin:auto;
+    width:80vw;
+  }
+
+  .screen{
+    height:77.9vh;
+  }

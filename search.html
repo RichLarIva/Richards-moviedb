@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search results</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="js/search.js" defer></script>
+</head>
+<body class="bg-cover bg-gradient-to-b from-slate-500 to-slate-800 bg-no-repeat min-h-screen">
+    <div class="center">
+        <header class="bg-gray-600 h-48 max-h-full">
+            <div class="grid place-items-center">
+                <div class="flex place-items-center">
+                    <img src="images/pngegg.png" class="w-20">
+                    <span class="text-6xl subpixel-antialiased align-middle text-white text-center">
+                        RMDb
+                    </span>
+                </div>
+            </div>
+            <div class="srch">
+                <form method="get" action="search.html">
+                    <input type="text" id="sok" name="search" class="w-2/5 text-2xl rounded-xl border-4 border-black m-2 duration-700 focus:w-3/5" required minlength="1">
+                    <input type="submit" value="Search" class="rounded text-2xl text-black bg-gradient-to-r from-green-400 to-blue-500 duration-300 hover:from-pink-500 hover:to-yellow-500 hover:text-white cursor-pointer hover:text-4xl outline outline-2 focus:ring focus:outline-none focus:border-blue-500 outline-offset-2 hover:outline-offset-4 m-4">
+                </form>
+                <a href="index.html" class="duration-500 rounded text-black text-2xl outline outline-2 outline-offset-2 m-4 bg-gradient-to-r from-green-500 to-blue-500  hover:from-pink-600 hover:to-yellow-600 hover:text-white hover:text-3xl hover:outline-offset-4">Home</a>
+            </div>
+        </header>
+        <br>
+        <nav>
+            <button class="pp outline outline-2 outline-offset-2 hover:outline-offset-4">Prev Page</button>
+            <span class="cur-page">1</span>
+            <button class="np text-white outline outline-2 outline-offset-2 hover:outline-offset-4">Next Page</button>
+        </nav>
+        <br>
+        <div class="holder place-items-center"></div>
+        <br>
+        <nav>
+            <button class="pp outline outline-2 outline-offset-2 hover:outline-offset-4">Prev Page</button>
+            <span class="cur-page">1</span>
+            <button class="np text-white outline outline-2 outline-offset-2 hover:outline-offset-4">Next Page</button>
+        </nav>
+        <br>
+    </div>
+    </body>
+</html>
