@@ -1,2 +1,2 @@
 # Richards-moviedb
- 
+ This site was made to learn more about API's expecially in the sense of making a movie related website. The main concept of this site is to be able to see popular media as of this day in no specific order.
