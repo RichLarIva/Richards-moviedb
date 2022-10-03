@@ -9,3 +9,6 @@
  **Things I would do if I had more time to develop this project**
  - First thing I would do would be to figure out how to get the genre of the movie/series as the API I used, had genre id's rather than the name of the genre forcing me to make more advanced code.
  - I would focus more on the design.
+---
+## Specs
+The specifications I had, have been impletented well, as my only demand was being able to see popular movies/tv series as of today.
